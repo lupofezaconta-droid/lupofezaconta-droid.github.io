@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer"><title>Autorização TikTok — Lupo Fez a Conta</title><link rel="stylesheet" href="estilo.css"></head>
+<body><main class="wrap doc">
+<p class="marca">Lupo Fez a Conta Publisher</p>
+<h1>Autorização recebida</h1>
+<p>Copie o código abaixo e cole no programa de autorização no computador. O código expira em poucos minutos e só funciona uma vez. Esta página não envia o código a lugar nenhum.</p>
+<p><code id="c" style="word-break:break-all;font-size:15px"></code></p>
+<p id="e" class="data"></p>
+<script>
+var p=new URLSearchParams(location.search);
+document.getElementById('c').textContent=p.get('code')||'(nenhum código na URL)';
+if(p.get('error'))document.getElementById('e').textContent='Erro: '+p.get('error')+' '+(p.get('error_description')||'');
+</script>
+</main></body></html>
